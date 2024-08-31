@@ -1,0 +1,16 @@
+.redclass{
+    background-color: rgb(236, 163, 163);
+}
+
+.greenclass{
+    background-color: rgb(170, 229, 170);
+}
+
+#FirstDiv{
+    color: blue;
+}
+
+#SecondDiv{
+
+    color: brown;
+}
