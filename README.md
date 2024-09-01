@@ -1,2 +1,1 @@
-# Web-dev-Practice
- Practicing my Web-Dev here
+On my web development learning Journey
