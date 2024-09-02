@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fonts</title>
+    <!--U can include Baloo Bhai font through link format here-->
 </head>
+<style>
+    /* Including Baloo Bhai font through import format */
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+    }
+
+    p {
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic; */
+        font-family: "Baloo Bhai 2", sans-serif;
+        font-size: 20px;
+        /* font-weight: 500; */
+    }   
+
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration:underline;
+        text-decoration-color: blue;
+        /* text-decoration-style: dotted; */
+        text-decoration-thickness: 7px;
+        /* text-indent: 10px; */
+    }
+
+    .lorem{
+        border: solid red;
+        width: 150px;
+        word-break: break-all;
+        /* text-overflow:ellipsis; */
+        /* overflow: hidden; */
+    }
+</style>
+
 <body>
     <h1>Fonts</h1>
+    <h2>about Fonts</h2>
     <p>Today we will learn about fonts</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla animi repellat inventore accusamus dolores magni? Earum eligendi nesciunt exercitationem eum aperiam expedita ducimus.</p>
 </body>
+
 </html>
+
+
+<!-- Summary of Lecture 19:-
+1. font-family: a, b;  
+2. font-style: italic : make font italic (oblique)
+3. font-weight: N ; use to make text bolder
+4. font-size: N px; 
+5. line-height: N px ; 
+6. letter-spacing: N px; 
+7.(i)  text-transform: capitalize
+(ii) text-transform: lowercase
+(iii) text-transform: uppercase
+8.(i)  text-decoration-style: dotted
+(ii)  text-decoration-color: red
+(iii)  text-decoration-thickness: N px
+(iv) text-decoration-line: underline
+9. text-indent: N px
+10. text-overflow: ellipsis; overflow: hiddem
+11. word-break: break-all;
+12. text-align:center-->
