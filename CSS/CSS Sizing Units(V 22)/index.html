@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;      /*----->To centre the div*/
+            background-color: bisque;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;      /* ----->To centre the div */
+            background-color: bisque;
+            /* font-size: 18px; */
+        }
+
+        .container > div{
+            /* font-size: 1.5em;  ----> To multiply the font size inherited from container */
+            font-size: 2rem;  /* -----> To multiply the font size inherited from root like html */
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .container > div > div{
+            width: 50%;
+            border: 2px solid blue;
+        }
+
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 100vmin; */
+            width: 80vw;
+            margin: 23px auto;      /*----->To centre the div*/
+            background-color: rgb(251, 251, 251);
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam omnis eius suscipit esse tempore quos tenetur fugit reiciendis, similique fuga perspiciatis praesentium ad soluta animi recusandae! Eum nam nesciunt fugit reiciendis obcaecati vero modi accusamus totam laudantium porro autem placeat facilis doloribus molestias suscipit eius pariatur laboriosam magnam laborum, dignissimos quisquam repellat qui. Libero, possimus officiis.
+
+            <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquam repellat possimus officia eligendi temporibus ea, aperiam sed. Vel explicabo ab nam velit?
+            </div>
+
+            <!-- Expend this to see min height maintained by the container lorem999 -->
+        </div>
+    </div>
+    <div class="mycont">
+        This is another container
+    </div>
+</body>
+</html>
+
+
+<!-- Summery:-
+
+Css unit
+
+1) px -pixel (individual dot of display)
+2) viewport - relative to screen display
+ vw- viewport width 
+ vh- viewport height
+3) em-  relative to font size of  parent container( if 2em = 2*parent element size
+If parent height = 10px
+Thn child height = 2*10px = 20px)
+
+4) rem- relative to font size of root element (2rem= 2*size of root element )
+5) vmin - in computer vmin =height
+                In phone vmin= width
+6) vmax 
+7) min height = Min height of the container
+ ( if for any containers min-height = 50px
+Height= 10 px
+For this case height of container will 50px)
+8) max height ( Max height of container)
+9) % - n% of parent element
+( if height of a container is 100px , height of child 80% , height of child will be - 80% of 100px = 80px) -->
