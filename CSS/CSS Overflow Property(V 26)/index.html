@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 15vw;
+            height: 10vh;
+            overflow: auto; /* We choose auto so that scroll bar comes automatically when needed otherwise not. */
+            /* white-space: nowrap; ------ > To make the text all horizontal */
+            text-overflow: ellipsis; /* To show 3 dots at the end */
+            /* overflow-x: hidden; -----> Individually for x */
+            /* overflow-y: scroll; -----> Individually for y*/
+            /* overflow: scroll hidden; */
+            /*             (x)    (y)  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box and is filled with Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore molestiae fugit deserunt quos fugiat commodi enim numquam id, delectus, architecto alias omnis laborum maxime autem ducimus blanditiis accusantium dolorem repudiandae? Optio corporis eius, officia tempora quam adipisci expedita, aut corrupti quae quas deserunt veniam. Voluptatum quos, dolore velit sint labore repellat saepe temporibus.
+    </div>
+</body>
+</html>
