@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+
+.image {
+    padding: 5px;
+}
+
+.image img{
+    border-radius: 10px;
+}
+
+.card {
+    position: absolute;
+    background-color: white;
+    height: 410px;
+    width: 290px;
+    border-radius: 10px;
+}
+
+.capsule{
+    padding: 0px 10px 0px;
+}
+.capsule span{
+    border: 1px solid rgb(128, 128, 128, 0.5) ;
+    border-radius: 12px;
+    padding: 0px 5px 0px 5px ;
+    color: rgb(128, 128, 128, 0.8);
+}
+
+.content h2{
+    padding: 15px;
+}
+
+.content p{
+    font-size: 12.5px;
+    color: rgb(128, 128, 128);
+    padding: 0px 15px 0px;
+}
+
+.button{
+    text-align: center;
+    padding: 30px;
+}
+
+.button button{
+    border-radius: 17px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #91cff6;
+    color: #1084cd;
+    font-weight: bold;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background-color: #68b0dd;
+    color: rgb(44, 123, 220);
+}
