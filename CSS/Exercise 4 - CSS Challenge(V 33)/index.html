@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+
+        :root{
+            --color: rgb(236, 45, 207);
+            --seccolor: steelblue;
+            --font-color: white;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 200px;
+            width: 90vw;
+            margin: 0px 50px 10px ;
+        }
+
+        .nav{
+            list-style: none;
+            display: flex;
+        }
+
+        .nav li a{
+            padding : 50px;
+            margin: 10px;
+            font-weight: bolder;
+            color: var(--font-color);
+            text-decoration: none;
+        }
+
+        .box1{
+            background-color: var(--color);
+            position: sticky;
+            top: 0px;
+        }
+
+        .box2{
+            background-color: blueviolet;
+        }
+
+        .box3{
+            background-color: burlywood;
+        }
+
+        .box4{
+            background-color: chartreuse;
+        }
+
+        .box5{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="nav box box1">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="boxes">
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+    </div>
+</body>
+</html>
