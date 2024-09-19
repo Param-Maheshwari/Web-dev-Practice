@@ -1,0 +1,35 @@
+:root{
+    --color: rgb(145, 145, 209);
+    --seccolor: rgb(137, 213, 238);
+    --defpad: 23px;
+    --defop: 0.4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: var(--color);
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+    border: 2px solid var(--seccolor);
+}
+
+ul li:first-child{
+    --color: rgb(211, 229, 17);
+    background-color: var(--color, blue);/*---> We used blue as a back up if its unable to find variable " --color " */
+}
+
+.container{
+    background-color: var(--seccolor);
+}
