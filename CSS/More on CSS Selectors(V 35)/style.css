@@ -1,0 +1,52 @@
+/* .box:first-child{
+    background-color: red;
+} */
+
+/* .box:first-line{
+    color: brown;
+} */
+
+/* .boxes *{
+    color: brown;
+    border: 2px solid black;
+}*/
+
+/* p, a, .box, [data-color="primary"]{
+    padding-top: 45px;
+} */
+
+/* .box:nth-child(odd){
+    color: blueviolet;
+} */
+
+/* .box:last-child{
+    background-color: red;
+} */
+
+/* .box:nth-last-child(2){
+    background-color: red;
+} */
+
+.boxes::before{
+    content: "Param is a boy";
+    color: blue;
+}
+
+.boxes::after{
+    content: "Keep moving forward";
+    color: red;
+}
+
+::selection{
+    background-color: black;
+    color: aqua;
+}
+
+.box::first-letter{
+    color: peru;
+    font-size: 45px;
+}
+
+input::placeholder{
+    color: rgb(58, 58, 66);
+}
