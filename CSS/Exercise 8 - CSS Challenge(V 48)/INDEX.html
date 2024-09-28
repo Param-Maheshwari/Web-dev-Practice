@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        .container{
+            position: relative;
+            width: 80vw;
+            height: 80vh;
+            background-color: blue;
+        }
+        .ball{
+            position: absolute;
+            width: 121px;
+            height: 121px;
+            background-color: red;
+            border-radius: 70px;
+            bottom: 0;
+            left: 0;
+            animation: ball_bounce_X 3s linear infinite alternate-reverse,
+                       ball_bounce_Y 0.55s ease-out infinite alternate;
+        }
+
+        @keyframes ball_bounce_X{
+            from{
+                left: 0;
+            }
+            to{
+                left: 982px;
+            }
+        }
+
+        @keyframes ball_bounce_Y{
+            from{
+             bottom: 0;   
+            }
+            to{
+             bottom: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 70vh;
+            background-color: yellow;
+        }
+        .box{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            /* animation: paramKaAnimation;
+            animation-duration: 3s;
+            animation-timing-function: linear;   
+            animation-iteration-count: infinite;
+            animation-delay: 1s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: paramKaAnimation 3s linear infinite alternate-reverse,
+                       animation2 1s 1 ;
+        }
+
+        @keyframes paramKaAnimation {
+            from{
+                background-color: brown;
+            }
+            to{
+                background-color: chocolate;
+                transform: translateX(46.4vw);
+            }
+        }
+
+        @keyframes animation2 {
+            0%{
+                transform: rotate(45deg);
+            }
+            20%{
+                transform: rotate(90deg);
+            }
+            40%{
+                transform: rotate(150deg);
+                scale: 2;
+            }
+            60%{
+                transform: rotate(200deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                scale: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
