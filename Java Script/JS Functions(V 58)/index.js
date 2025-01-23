@@ -4,7 +4,7 @@ function nice(name) {
     console.log("Hey "+name+" you are looking happy!");
     console.log("Hey "+name+" great to meet you!");
 }
-// nice("Param")
+nice("Param")
 
 function sum(a , b , c = 10) {
     console.log(a,b,c);
